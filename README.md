@@ -11,3 +11,9 @@
 # Check numbers over 1000
 
 ![image](https://user-images.githubusercontent.com/45043430/159148808-2801cbba-5a6e-4094-a9c4-96ffabaf1384.png)
+
+
+# Check negative numbers
+
+![image](https://user-images.githubusercontent.com/45043430/159149479-83457961-e1f0-4d50-b22b-cb0a3c98be15.png)
+
