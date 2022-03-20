@@ -13,8 +13,13 @@ class StringCalculatorTest {
 
     @Test
     public void sumTwoNumbersByComaOrEnter() throws Exception{
-
         assertEquals(7,calculator.sumTwoNumbersByComaOrEnter("2,5"));
         assertEquals(7,calculator.sumTwoNumbersByComaOrEnter("2\n5"));
+    }
+
+    @Test
+    public void checkNumberOver1000() throws Exception{
+        assertEquals(0, calculator.checkNumberOver1000("1001"));
+        assertEquals(400,calculator.checkNumberOver1000("400"));
     }
 }
