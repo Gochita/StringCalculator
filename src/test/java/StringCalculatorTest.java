@@ -10,4 +10,11 @@ class StringCalculatorTest {
     public void emptyStringTest() throws Exception {
         assertEquals(0,calculator.emptyString(""));
     }
+
+    @Test
+    public void sumTwoNumbersByComaOrEnter() throws Exception{
+
+        assertEquals(7,calculator.sumTwoNumbersByComaOrEnter("2,5"));
+        assertEquals(7,calculator.sumTwoNumbersByComaOrEnter("2\n5"));
+    }
 }
