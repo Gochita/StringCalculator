@@ -25,12 +25,24 @@ public class StringCalculator {
         list = num.split("[,|\n]");
         int retornable;
         int numero = Integer.parseInt(num);
-        if(numero>1000){
-            retornable=0;
-        }else{
-            retornable=numero;
+        if (numero > 1000) {
+            retornable = 0;
+        } else {
+            retornable = numero;
         }
         return retornable;
+
+    }
+
+    public int negativeNumberCheck(String num) {
+        list = num.split("[,|\n]");
+        int retornable;
+        int numero = Integer.parseInt(num);
+        if (numero < 0) {
+            throw new RuntimeException("El numero debe ser positvo");
+        } else {
+            return numero;
+        }
 
     }
 

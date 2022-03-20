@@ -22,4 +22,12 @@ class StringCalculatorTest {
         assertEquals(0, calculator.checkNumberOver1000("1001"));
         assertEquals(400,calculator.checkNumberOver1000("400"));
     }
+
+    @Test
+    public void negativeNumberCheck() throws  Exception{
+        assertEquals(0,calculator.negativeNumberCheck("0"));
+        Exception thrown = assertThrows(Exception.class, () ->
+                calculator.negativeNumberCheck("-1"));
+        assertEquals("El numero debe ser positvo", thrown.getMessage());
+    }
 }
