@@ -17,3 +17,11 @@
 
 ![image](https://user-images.githubusercontent.com/45043430/159149479-83457961-e1f0-4d50-b22b-cb0a3c98be15.png)
 
+# Diferent delimiter test
+
+![image](https://user-images.githubusercontent.com/45043430/159368748-f9b670f2-3b30-4011-8725-56e11f8679e4.png)
+
+
+# Many delimiter test passed
+
+![image](https://user-images.githubusercontent.com/45043430/159368841-c82a19fd-84bb-45e7-994e-67113138893e.png)
