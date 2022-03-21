@@ -1,3 +1,8 @@
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class StringCalculator {
 
     private String[] list = null;
@@ -46,7 +51,28 @@ public class StringCalculator {
 
     }
 
+    public int differentDelimiter(String num, String delimiter) throws Exception {
+        String[] listaModificada = null;
+        num = num.replace(" ", "");
+        delimiter = delimiter.replace(" ", "");
+        Pattern pat = Pattern.compile(".*" + delimiter + ".*");
+        Matcher mat = pat.matcher(num);
+        int suma = 0;
+        if (mat.matches()) {
+
+            listaModificada = num.split(delimiter);
+            for (String elemento : listaModificada) {
+                suma += Integer.parseInt(elemento);
+            }
+            return suma;
+
+        } else {
+            throw new IllegalArgumentException("multiples delimitadores");
+        }
+    }
+
 }
+
 
 
 
